@@ -16,6 +16,9 @@ namespace Backend.Data
 
       modelBuilder.Entity<Cliente>()
           .HasKey(c => c.Id);
+
+      modelBuilder.Entity<Pesquisa>()
+          .HasKey(p => p.Id);
     }
   }
 }

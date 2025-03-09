@@ -10,7 +10,8 @@ builder.Services.AddDbContext<BackendDbContext>(options =>
 );
 
 // Registrar os serviços
-builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<PesquisaService>();
 
 // Habilitar Controllers
 builder.Services.AddControllers();
